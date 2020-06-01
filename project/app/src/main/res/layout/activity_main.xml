@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/primary_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="32dp"
+
+
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="269dp"
+        android:hint="  Username or email"
+        android:textColorHint="@color/blue"
+        app:boxStrokeColor="@color/blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/unLI"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="420dp"
+            android:drawableStart="@drawable/mail"
+            android:drawableLeft="@drawable/mail"
+            android:paddingStart="10dp"
+            android:textColor="@color/blue"
+            android:transitionName="username"
+            app:boxStrokeColor="@color/blue">
+
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="29dp"
+
+        android:layout_marginRight="29dp"
+        android:layout_marginBottom="191dp"
+        android:hint="  Password"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/blue"
+        android:textColorHint="@color/blue"
+        app:boxStrokeColor="@color/blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pwLI"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:transitionName="password"
+            android:layout_marginTop="420dp"
+            android:drawableStart="@drawable/lock"
+            android:drawableLeft="@drawable/lock"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:textColor="@color/blue"
+            app:boxStrokeColor="@color/blue">
+
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/mLi"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginRight="107dp"
+        android:layout_marginBottom="116dp"
+        android:background="@drawable/"
+        android:text="Signin"
+        android:textColor="@color/colorPrimary"
+        android:transitionName="button" />
+
+
+
+</RelativeLayout>
